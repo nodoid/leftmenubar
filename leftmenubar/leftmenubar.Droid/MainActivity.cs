@@ -20,6 +20,10 @@ namespace leftmenubar.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+
+            App.ScreenSize = new Size(Resources.DisplayMetrics.WidthPixels / Resources.DisplayMetrics.Density,
+                Resources.DisplayMetrics.HeightPixels / Resources.DisplayMetrics.Density);
+
             LoadApplication(new App());
         }
     }

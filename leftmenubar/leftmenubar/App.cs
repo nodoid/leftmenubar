@@ -9,8 +9,14 @@ namespace leftmenubar
 {
     public class App : Application
     {
+        public static Size ScreenSize { get; set; }
+        public bool PanelShowing { get; set; } = false;
+        public static App Self { get; private set; }
+
         public App()
         {
+            App.Self = this;
+
             // The root page of your application
             var content = new ContentPage
             {
