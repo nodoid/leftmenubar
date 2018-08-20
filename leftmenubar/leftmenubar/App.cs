@@ -33,7 +33,7 @@ namespace leftmenubar
                 }
             };
 
-            MainPage = new NavigationPage(content);
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

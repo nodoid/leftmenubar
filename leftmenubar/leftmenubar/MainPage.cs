@@ -52,53 +52,7 @@ namespace leftmenubar
             var topbar = new TopBar("Swipe test", this, "", "icomenu", innerStack).CreateTopBar();
             stack.HeightRequest = App.ScreenSize.Height - topbar.HeightRequest;
 
-            var btnNew = new CustomButton
-            {
-                WidthRequest = App.ScreenSize.Width * .45,
-                HeightRequest = App.ScreenSize.Height * .3,
-                BorderRadius = 5,
-                BackgroundColor = Constants.NELFTOrange,
-                Text = Langs.Menu_NewMeeting,
-                TextColor = Color.Black,
-                Image = "Add48",
-                Command = new Command(async (t) => await Navigation.PushAsync(new NewMeeting()))
-            };
 
-            var btnCancel = new CustomButton
-            {
-                WidthRequest = App.ScreenSize.Width * .45,
-                HeightRequest = App.ScreenSize.Height * .3,
-                BorderRadius = 5,
-                BackgroundColor = Constants.NELFTBlue,
-                Text = Langs.Menu_Cancel,
-                TextColor = Color.Black,
-                Image = "Close48",
-                Command = new Command(async (t) => await Navigation.PushAsync(new CancelMeeting()))
-            };
-
-            var btnPending = new CustomButton
-            {
-                WidthRequest = App.ScreenSize.Width * .45,
-                HeightRequest = App.ScreenSize.Height * .3,
-                BorderRadius = 5,
-                BackgroundColor = Constants.NELFTGreen,
-                Text = Langs.Menu_Pending,
-                TextColor = Color.Black,
-                Image = "get_info",
-                Command = new Command(async (t) => await Navigation.PushAsync(new PendingMeeting()))
-            };
-
-            var btnUpcoming = new CustomButton
-            {
-                WidthRequest = App.ScreenSize.Width * .45,
-                HeightRequest = App.ScreenSize.Height * .3,
-                BorderRadius = 5,
-                BackgroundColor = Constants.NELFTYellow,
-                Text = Langs.Menu_Upcoming,
-                TextColor = Color.Black,
-                Image = "CalendarDate0248",
-                Command = new Command(async (t) => await Navigation.PushAsync(new UpComingMeeting()))
-            };
 
             stack.Children.Add(new StackLayout
             {
@@ -109,18 +63,7 @@ namespace leftmenubar
                 TranslationY = -8,
                 Children =
                         {
-                            new StackLayout
-                            {
-                                Orientation = StackOrientation.Horizontal,
-                                WidthRequest = App.ScreenSize.Width * .9,
-                                Children = {btnNew, btnUpcoming}
-                            },
-                            new StackLayout
-                            {
-                                Orientation = StackOrientation.Horizontal,
-                                WidthRequest = App.ScreenSize.Width * .9,
-                                Children = {btnCancel, btnPending}
-                            }
+                    new Button {Text = "hello"}
                         }
             });
 
