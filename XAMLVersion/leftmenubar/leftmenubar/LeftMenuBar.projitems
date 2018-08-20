@@ -18,10 +18,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Controls\MenuListView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\MainPage.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\NavigationViewPage.xaml">
       <SubType>Designer</SubType>
@@ -39,9 +35,6 @@
       <DependentUpon>MenuView.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Models\MenuList.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Controls\MenuListView.xaml.cs">
-      <DependentUpon>MenuListView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
