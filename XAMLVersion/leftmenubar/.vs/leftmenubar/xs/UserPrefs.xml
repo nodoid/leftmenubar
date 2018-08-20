@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{B46AE8F5-A5BD-45C3-9269-8CFE4EE64C4D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="leftmenubar/Views/NavigationViewPage.xaml.cs">
+    <Files>
+      <File FileName="leftmenubar/Views/NavigationViewPage.xaml" Line="16" Column="1" />
+      <File FileName="leftmenubar/Views/MainPage.xaml.cs" Line="15" Column="34" />
+      <File FileName="leftmenubar/Controls/Topbar.xaml" Line="38" Column="1" />
+      <File FileName="leftmenubar/Controls/Topbar.xaml.cs" Line="27" Column="48" />
+      <File FileName="leftmenubar/Controls/MenuView.xaml" Line="28" Column="1" />
+      <File FileName="leftmenubar/Controls/MenuView.xaml.cs" Line="23" Column="48" />
+      <File FileName="leftmenubar/Models/MenuList.cs" Line="1" Column="1" />
+      <File FileName="leftmenubar/Controls/MenuListView.xaml.cs" Line="8" Column="6" />
+      <File FileName="leftmenubar/App.xaml.cs" Line="7" Column="2" />
+      <File FileName="leftmenubar/Views/MainPage.xaml" Line="6" Column="15" />
+      <File FileName="leftmenubar/Controls/MenuListView.xaml" Line="21" Column="12" />
+      <File FileName="leftmenubar/Views/NavigationViewPage.xaml.cs" Line="67" Column="65" />
+      <File FileName="leftmenubar.iOS/Main.cs" Line="14" Column="6" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.LeftMenuBar FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/PFJ/Developer/LeftMenuBar/XAMLVersion/leftmenubar/leftmenubar/Views/NavigationViewPage.xaml.cs" relfile="leftmenubar/Views/NavigationViewPage.xaml.cs" line="66" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.leftmenubar.Android PreferredExecutionTarget="Android.8DSCLBJZGUZSGISO" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.LeftMenuBar.iOS FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.leftmenubar.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.d3304de7e6bd5b759c64a31c60dedfcb1d861b0d" />
+  <MonoDevelop.Ide.ItemProperties.LeftMenuBar.Android PreferredExecutionTarget="Android.Android_Accelerated_Oreo" FirstBuild="True" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+</Properties>

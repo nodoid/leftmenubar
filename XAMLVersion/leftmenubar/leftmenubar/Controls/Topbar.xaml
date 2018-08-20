@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LeftMenuBar.Controls.Topbar">
+	<ContentView>
+		<Grid BackgroundColor="{Binding BarColour}">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="40" />
+			</Grid.RowDefinitions>
+			<StackLayout Grid.Row="0">
+				<Grid>
+					<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="1.5*" />
+					<ColumnDefinition Width="7*" />
+					<ColumnDefinition Width="1.5*" />
+					</Grid.ColumnDefinitions>
+					<StackLayout VerticalOptions="Center" HorizontalOptions="Start" Padding="8,0" Grid.Column="0">
+						<Image x:Name="leftImage" Source="{Binding LeftImageSource}" HeightRequest="{Binding LeftHeight}" WidthRequest="{Binding LeftWidth}">
+							<Image.GestureRecognizers>
+								<TapGestureRecognizer NumberOfTapsRequired="1" Command="{Binding LeftCommand}" />
+							</Image.GestureRecognizers>
+						</Image>
+					</StackLayout>
+					<StackLayout VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="1">
+						<Image Source="{Binding CentreImageSource}" HeightRequest="{Binding CentreHeight}" WidthRequest="{Binding CentreWidth}" IsVisible="{Binding HasImage}" />
+						<Label Text="{Binding CentreTextSource}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" IsVisible="{Binding HasText}" FontSize="{Binding FontSize}" TextColor="{Binding TextColour}"/>
+					</StackLayout>
+					<StackLayout VerticalOptions="Center" HorizontalOptions="End" Padding="8,0" Grid.Column="2">
+						<Image x:Name="rightImage" Source="{Binding RightImageSource}" HeightRequest="{Binding RightHeight}" WidthRequest="{Binding RightWidth}">
+							<Image.GestureRecognizers>
+								<TapGestureRecognizer NumberOfTapsRequired="1" Command="{Binding RightCommand}" />
+							</Image.GestureRecognizers>
+						</Image>
+					</StackLayout>
+				</Grid>
+			</StackLayout>
+		</Grid>
+	</ContentView>
+</ContentView>

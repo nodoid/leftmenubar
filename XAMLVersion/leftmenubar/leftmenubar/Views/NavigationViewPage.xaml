@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LeftMenuBar.Views.NavigationViewPage" xmlns:controls="clr-namespace:LeftMenuBar.Controls" NavigationPage.HasNavigationBar="false">
+	<ContentPage.Content>
+		<StackLayout VerticalOptions="Start" HorizontalOptions="Start" x:Name="mainStack">
+			<StackLayout VerticalOptions="Start" HorizontalOptions="Start" x:Name="topBarStack">
+				<controls:Topbar x:Name="topBar" LeftImageSource="arrowback_blue" LeftHeight="32" LeftWidth="32" CentreImageSource="logo" CentreWidth="42" CentreHeight="42" RightImageSource="menu" RightWidth="32" RightHeight="32" BackgroundColor="Olive" Opacity=".75" />
+			</StackLayout>
+			<StackLayout VerticalOptions="Start" HorizontalOptions="Start" x:Name="innerStack" Orientation="Horizontal">
+				<StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand" x:Name="contentStack">
+					<StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="12" TranslationY="-8">
+						<Label Text = "this is a test" />
+					</StackLayout>
+				</StackLayout>
+			</StackLayout>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
